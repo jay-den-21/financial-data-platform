@@ -1,4 +1,4 @@
-# QuantProject
+# financial-data-platform
 
 `financial-data-platform` is a traceable and verifiable financial data platform.
 
