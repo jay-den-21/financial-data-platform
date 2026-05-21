@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "financial-data-platform"
+version = "0.1.0"
+description = "Traceable and verifiable financial data platform."
+authors = ["Boqing Xin"]
+readme = "README.md"
+packages = [{ include = "fdp", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<4.0"
+alembic = ">=1.13"
+pydantic-settings = ">=2.2"
+pymysql = ">=1.1"
+python-dotenv = ">=1.0"
+pyyaml = ">=6.0"
+sqlalchemy = ">=2.0"
+typer = ">=0.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = ">=8.0"
+ruff = ">=0.5"
+
+[tool.poetry.scripts]
+fdp = "fdp.cli:app"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests"]

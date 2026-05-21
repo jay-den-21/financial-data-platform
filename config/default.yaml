@@ -1,0 +1,25 @@
+app:
+  env: local
+
+database:
+  driver: mysql+pymysql
+  host: ${FDP_DB_HOST}
+  port: ${FDP_DB_PORT}
+  user: ${FDP_DB_USER}
+  password: ${FDP_DB_PASSWORD}
+  database: ${FDP_DB_NAME}
+
+schemas:
+  us_share: us_share
+  a_share: a_share
+  system: system
+  test_us_share: test_us_share
+  test_a_share: test_a_share
+  test_system: test_system
+
+sources:
+  eodhd:
+    api_key: ${EODHD_API_KEY}
+    base_url: https://eodhd.com/api
+    max_retries: 3
+
