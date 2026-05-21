@@ -1,6 +1,6 @@
-# financial-data-platform
+# QuantProject
 
-Traceable and verifiable financial data platform.
+`financial-data-platform` is a traceable and verifiable financial data platform.
 
 `PROJECT.md` is the project specification. This README is the quickstart for local development.
 
@@ -49,4 +49,3 @@ cp .env.example .env
 ```
 
 Do not commit `.env`, API keys, database passwords, tokens, or private keys.
-
