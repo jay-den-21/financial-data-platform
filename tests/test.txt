@@ -1,0 +1,3 @@
+poetry run pytest # 检查代码行为是否符合预期
+poetry run ruff check .  # 检查代码静态质量
+poetry run alembic heads # 检查 migration 版本图是否正常

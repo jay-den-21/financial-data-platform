@@ -2,7 +2,8 @@
 
 `financial-data-platform` is a traceable and verifiable financial data platform.
 
-`PROJECT.md` is the project specification. This README is the quickstart for local development.
+`PROJECT.md` is the project specification. `PROGRESS.md` tracks implementation status.
+This README is the quickstart for local development.
 
 ## Development Setup
 
